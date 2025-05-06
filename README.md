@@ -1,5 +1,6 @@
 # St.-Patrick-s-Hospital-Patient-Review-2019-2024-
-Introduction 
+INTRODUCTION
+
 In the heart of healthcare lies a silent but powerful force—data. From patient outcomes to medication efficiency, billing to admissions, each data point tells a story. Between 2019 and 2024, St. Patrick’s Hospital has navigated a complex healthcare landscape shaped by innovation, patient demands, insurance shifts, and unprecedented global health events. But what do the numbers actually say?
 
 This analysis aims to peel back the layers of hospital operations, leveraging data-driven storytelling to uncover what truly drives outcomes, costs, and patient care effectiveness. Using Microsoft Excel for in-depth analysis and visualization, this report presents a comprehensive review of billing patterns, patient demographics, prevalent conditions, insurance providers, and test results over a five-year period.
