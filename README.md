@@ -6,8 +6,7 @@ In the heart of healthcare lies a silent but powerful force—data. From patient
 This analysis aims to peel back the layers of hospital operations, leveraging data-driven storytelling to uncover what truly drives outcomes, costs, and patient care effectiveness. Using Microsoft Excel for in-depth analysis and visualization, this report presents a comprehensive review of billing patterns, patient demographics, prevalent conditions, insurance providers, and test results over a five-year period.
 
 Whether you are a hospital administrator, policymaker, or health data enthusiast, this report provides actionable insights to enhance healthcare delivery, operational efficiency, and strategic planning.
-
-2. Story of the Data
+ 
 Data Source
 The dataset was extracted from St. Patrick’s Hospital’s internal data warehouse, covering the years 2019 to 2024. It reflects records from the hospital’s billing department, patient registration logs, insurance claims, laboratory tests, and physician visit tracking systems.
 
@@ -37,11 +36,10 @@ Sampling Bias: The dataset only reflects patients admitted, excluding outpatient
 
 Time Lag: Some billing and insurance data may reflect delays due to claim processing cycles.
 
-3. Data Splitting and Preprocessing
 Cleaning Steps
 Removed duplicate patient IDs.
 
-Standardized medication names (e.g., "Ibuprofen" vs. "Ibuprofen 400mg").
+Standardized medication names.
 
 Converted financial fields from text to numerical formats.
 
@@ -87,7 +85,7 @@ Strategic insurance partnerships
 
 Improved treatment protocols
 
-4. Pre-Analysis: Early Observations
+Pre-Analysis: Early Observations
 Before diving deep, several compelling trends emerged:
 
 Key Early Trends
@@ -107,7 +105,7 @@ The hospital’s revenue model is heavily dependent on five core conditions and 
 
 There may be disparities in how test results drive medication decisions.
 
-5. In-Analysis: Deep Dive into the Data
+In-Analysis: Deep Dive into the Data
 Unconfirmed Patterns
 There seems to be a consistent yearly admission rate (~52/year) except a drop in 2023. Was this due to external factors (e.g., pandemics)?
 
@@ -127,7 +125,7 @@ Investigate 2023 admission dip for underlying causes.
 
 Standardize test protocols to reduce “Inconclusive” results.
 
-6. Post-Analysis & Final Insights
+Post-Analysis & Final Insights
 Key Findings
 Total revenue over five years: $1.4 Billion+.
 
@@ -149,7 +147,7 @@ Ibuprofen, a relatively inexpensive medication, is among the most used—likely 
 
 Elective admissions dominate despite high emergency infrastructure investment.
 
-7. Data Visualizations & Dashboard Breakdown
+Data Visualizations & Dashboard Breakdown
 Bar Charts: Used to represent billing by condition and provider, patient count per doctor.
 
 Line Chart: Year-over-year admission trend reveals a stable pattern with a dip in 2023.
@@ -169,7 +167,7 @@ The dashboard clearly shows which doctors are managing the most patients.
 
 Insurance contributions are tightly clustered, emphasizing the need for diversified partnerships.
 
-8. Recommendations and Observations
+Recommendations and Observations
 Actionable Insights
 Focus resources on top 3 billing conditions to maximize financial efficiency.
 
@@ -186,12 +184,12 @@ Revisit 2023 admission policy or external impacts to avoid future dips.
 
 Enhance data accuracy in test reporting to reduce inconclusive rates.
 
-9. Conclusion
+Conclusion
 The St. Patrick’s Hospital Patient Review (2019–2024) paints a data-rich picture of how a modern healthcare facility operates, adapts, and grows. From the sharp dominance of elective admissions to the consistent reliance on a handful of medications and insurance partners, the data reveals clear patterns that can drive smarter decisions.
 
 Yet, with this clarity comes responsibility—improving test result reliability, managing doctor workload more evenly, and adapting to patient demographics must become strategic priorities. As we close this chapter, the insights gleaned from this analysis serve not just as a retrospective, but as a compass for future care excellence.
 
-10. References & Appendices
+References & Appendices
 References
 St. Patrick’s Hospital Internal EHR System
 
