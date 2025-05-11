@@ -1,196 +1,174 @@
-# St.-Patrick-s-Hospital-Patient-Review-2019-2024-
+PROJECT TITLE
+
+UNVEILING PATIENT CARE DYNAMICS AT ST. PATRICK'S HOSPITAL (2019-2024)
+
 INTRODUCTION
 
-In the heart of healthcare lies a silent but powerful force—data. From patient outcomes to medication efficiency, billing to admissions, each data point tells a story. Between 2019 and 2024, St. Patrick’s Hospital has navigated a complex healthcare landscape shaped by innovation, patient demands, insurance shifts, and unprecedented global health events. But what do the numbers actually say?
+In the bustling heart of the healthcare ecosystem, where every heartbeat echoes the pulse of progress, St. Patrick’s Hospital has stood tall as a beacon of healing for half a decade. From 2019 to 2024, a vast ensemble of physicians, insurance providers, and frontline healthcare workers have come together to serve thousands. But behind the familiar rhythm of hospital routines, a deeper, richer story awaited discovery.
+Over these five years, St. Patrick’s billed over $1.4 billion in healthcare services, treated a diverse patient demographic, and battled conditions from chronic diabetes to life-threatening cancer. Yet, questions loomed: Were resources used optimally? Were certain physicians overburdened? Why did so many test results come back as inconclusive? This report journeys beyond numbers, inviting stakeholders into a narrative of insights, transformation, and hope.
 
-This analysis aims to peel back the layers of hospital operations, leveraging data-driven storytelling to uncover what truly drives outcomes, costs, and patient care effectiveness. Using Microsoft Excel for in-depth analysis and visualization, this report presents a comprehensive review of billing patterns, patient demographics, prevalent conditions, insurance providers, and test results over a five-year period.
+![Picture4](https://github.com/user-attachments/assets/1c684c0f-6c8a-424a-bd94-0eedbf34062a)
 
-Whether you are a hospital administrator, policymaker, or health data enthusiast, this report provides actionable insights to enhance healthcare delivery, operational efficiency, and strategic planning.
- 
-Data Source
-The dataset was extracted from St. Patrick’s Hospital’s internal data warehouse, covering the years 2019 to 2024. It reflects records from the hospital’s billing department, patient registration logs, insurance claims, laboratory tests, and physician visit tracking systems.
+PROBLEM STATEMENT
 
-Data Collection Process
-Data was recorded and aggregated through the hospital's Electronic Health Records (EHR) system, billing software, and laboratory information management systems. Cross-verification was performed with insurance claim reports.
+While St. Patrick's Hospital diligently serves its community, a comprehensive understanding of its operational dynamics and patient profiles remains a largely untapped resource. These Questions linger: 
 
-Data Structure
-Rows: Individual patient transactions or medical events.
+What are the most prevalent medical conditions driving hospital billing? 
+How has the average length of patient stay evolved over time? 
+Which medications are most frequently prescribed? 
+Are there discernible patterns in patient demographics or insurance coverage that influence healthcare delivery? 
+Without a systematic analysis of this wealth of data, opportunities for improvement, efficiency gains, and a deeper understanding of patient needs may be overlooked. 
+This project seeks to address this gap by transforming raw data into actionable intelligence.
 
-Columns: Variables such as medical condition, doctor, medication, admission type, blood type, test results, insurance provider, etc.
+SOLUTIONS
 
-Key Features & Their Significance
-Medical Conditions: Helps identify disease prevalence and cost burden.
+Proposed Solutions
 
-Admission Types & Length of Stay: Reflects urgency and care demand.
+Smart Workload Distribution: Implement AI-based scheduling and patient assignment algorithms to equalize doctor’s workload.
+Diagnostic Protocol Review: Audit lab practices, recalibrate equipment, and retrain staff to reduce inconclusive test outcomes.
+Optimized Billing Structures: Reassess and enhance billing codes for chronic yet undervalued conditions like arthritis.
+Insurance Relationship Management: Introduce performance dashboards for insurer billing efficiency and contract optimization.
+Balanced Admission Strategy: Set quotas for elective admissions while enhancing triage efficiency for emergencies.
 
-Doctors & Patient Counts: Highlights workload distribution.
+Tools and Methodologies
 
-Billing Data by Condition and Insurer: Provides financial insights.
+To navigate this sea of information, we employed a robust analytical approach, leveraging the power of data visualization to uncover hidden narratives. The primary tool utilized for this analysis was a comprehensive business intelligence dashboard, designed to consolidate and present key performance indicators in an intuitive and interactive manner. 
 
-Test Results & Medication: Links diagnostics to treatments and outcomes.
+Tools Used
 
-Data Limitations
-Incompleteness: Some test results are marked as “Inconclusive.”
+Microsoft Excel: For dynamic visualization of data trends and comparisons.
+Excel: Preliminary data filtering, validation, and modeling.
+SQL: Data extraction from hospital relational databases.
 
-Sampling Bias: The dataset only reflects patients admitted, excluding outpatient services.
+Methodologies Used
 
-Time Lag: Some billing and insurance data may reflect delays due to claim processing cycles.
+This data facilitated the exploration of various dimensions of the patient review data, including:
+Descriptive Statistics: Calculating measures such as totals, averages, and distributions to summarize key aspects of the data.
+Trend Analysis: Examining how key metrics, such as average yearly billing, have changed over the six-year period.
+Comparative Analysis: Juxtaposing different categories, such as billing by medical condition and insurance provider, to identify significant variations.
+Segmentation: Analyzing patient data based on admission type and blood type to reveal potential correlations.
+The visual nature of the dashboard allowed for rapid identification of patterns, outliers, and correlations that might not be readily apparent in raw data tables. This "show, don't tell" approach enabled a more engaging and accessible understanding of the hospital's operational landscape.
 
-Cleaning Steps
-Removed duplicate patient IDs.
+PRE-ANALYSIS
 
-Standardized medication names.
+Before diving into complex diagnostics and correlations, the preliminary overview painted an intriguing picture:
 
-Converted financial fields from text to numerical formats.
+Total Revenue
 
-Filled missing test results using “Inconclusive” as a neutral value.
+Top Billed Conditions
 
-Handling Missing Values
-For test types or medication info, “Not Applicable” or “Inconclusive” categories were used.
+Most Common Condition
 
-Unmatched billing entries were cross-verified with insurer aggregates.
+Most Frequent Admission Type
 
-Data Transformations
-Aggregated billing by condition and provider using pivot tables.
+Most Used Medication
 
-Generated new metrics: average admissions per year, average patients per doctor, etc.
+Top Billing Insurer
 
-Normalized length of stay by admission type.
+Common Blood Types
+These key markers provided a roadmap for deeper exploration, revealing not just hospital performance, but systemic imbalances masked by surface success.
 
-Data Splitting
-Dependent variables: Revenue, test results, patient count.
+IN-ANALYSIS 
 
-Independent variables: Medical condition, doctor, insurance provider, blood type, admission type.
+1. Billing by Medical Condition
 
-Industry Context
-This project falls within the Healthcare Analytics sector, focusing on hospital operations and clinical performance insights.
+![image](https://github.com/user-attachments/assets/98ff6ae2-c2ec-4ad7-b34e-c123eaa11ae7)
 
-Stakeholders
-Hospital management
+Though diabetes and obesity lead in billing revenue, arthritis, the most diagnosed condition lags slightly. Given arthritis’ chronic nature, this discrepancy indicates that either its treatments are underpriced, or billing procedures are less optimized. This gap may signify an opportunity to restructure treatment plans or review the medical coding framework.
 
-Insurance liaison teams
+2. Physician Workload Imbalance
 
-Medical staff (Doctors, Nurses, Lab Technicians)
+![image](https://github.com/user-attachments/assets/3ad124b0-f78a-4d23-8c11-ed19874ce374)
 
-Healthcare policymakers
+Michael Smith treats 27 patients, while his peers average around 18. This imbalance hints at either his overqualification or misaligned patient assignment. Beyond burnout risks, such skewness impacts care quality and turnaround times.
 
-Industry Value
-This data enables:
+3. Medication vs. Test Results
 
-Optimized resource allocation
+![image](https://github.com/user-attachments/assets/65e9215b-77e5-47d2-ba3f-ee0ad2973947)
 
-Better patient-doctor ratios
+Lipitor and Ibuprofen dominate prescriptions, each exceeding 11,000 instances. However, Ibuprofen shows a higher rate of abnormal test results, suggesting possible overprescription or patient incompatibility. Interestingly, Paracetamol and Aspirin, though slightly less used, exhibit better result consistency.
 
-Strategic insurance partnerships
+4. Insurance Provider Billing
+![image](https://github.com/user-attachments/assets/aa885027-13a0-42cc-b941-fb9137c22b1f)
 
-Improved treatment protocols
+Cigna and Medicare contribute nearly 40% of total revenue, while Aetna trails behind them despite being a major player. A close audit could uncover underbilling, rejected claims, or longer reimbursement cycles causing inefficiencies.
 
-Pre-Analysis: Early Observations
-Before diving deep, several compelling trends emerged:
+5. Admission Type and Stay Duration
 
-Key Early Trends
-Elective admissions dominate all other types.
+![image](https://github.com/user-attachments/assets/7beb3503-d6e0-4f75-930a-cc38235859b4)
 
-Arthritis is the most common condition, yet it ranks third in billing, suggesting efficient management or shorter stays.
+Elective admissions outnumber emergencies and urgent, with an average stay of 16 days. This could stretch hospital resources and slow down emergency responses. Emergencies, despite their intensity, last a day shorter, reflecting higher efficiency or perhaps, faster discharges.
 
-Lipitor and Ibuprofen are the most frequently administered medications, likely tied to cardiovascular and musculoskeletal conditions.
+6. Blood Type Trends
 
-Correlations Noticed
-High revenue correlates with conditions like Diabetes and Obesity—possibly due to chronic treatment requirements.
+![image](https://github.com/user-attachments/assets/b58c7ca6-aec9-40f0-b47e-43bd5b80de0b)
 
-Patients with blood types A- and A+ appear slightly more common.
+A+ and A- dominate the patient pool, while O- (the universal donor) is less common. Emergency preparedness must align with this insight to ensure blood banks maintain optimal stock.
 
-Initial Insights
-The hospital’s revenue model is heavily dependent on five core conditions and five insurance providers.
+7. Test Result Breakdown
 
-There may be disparities in how test results drive medication decisions.
+![image](https://github.com/user-attachments/assets/d8c30040-26aa-4781-b71a-29437f50d56b)
 
-In-Analysis: Deep Dive into the Data
-Unconfirmed Patterns
-There seems to be a consistent yearly admission rate (~52/year) except a drop in 2023. Was this due to external factors (e.g., pandemics)?
+Normal test results (18,198) are nearly equal to both abnormal (18,437) and inconclusive (18,331) ones. The high rate of unclear diagnostics raises a red flag for lab operations, calibration protocols, and overall diagnostic workflows.
 
-Penicillin is the least used medication among the top five. Could this reflect a shift in prescription trends due to resistance?
+IN-ANALYSIS INSIGHTS
 
-Excel Techniques Used
-Pivot Tables: For aggregating billing, test results, and patient distribution.
+Our deep dive into the data revealed several compelling narratives:
 
-SUMIFS & COUNTIFS: To analyze relationships between doctor and patient counts.
+Financial Landscape: The total revenue generated by hospital billing from 2019 to 2024 stood at a substantial $1,404,060,339.23. Examining billing by medical condition highlighted "Diabetes" and "Obesity" as significant contributors to hospital revenue, closely followed by "Arthritis" and "Hypertension." This suggests a high prevalence and potentially complex management of these chronic conditions within the hospital's patient population. Billing by insurance provider indicated that "Cigna" and "Medicare" accounted for the largest proportions of billed amounts.
+Patient Flow and Length of Stay: The average yearly admission trend showed some fluctuation over the years, peaking in 2021 and 2022. The length of stay analysis by admission type revealed a near equal distribution between "Elective" and "Emergency" admissions, with "Urgent" cases representing a smaller fraction. This balance suggests the hospital caters to both scheduled and acute care needs.
+Medication and Testing Patterns: "Lipitor" emerged as the most frequently used medication based on test results, followed closely by "Ibuprofen." This points towards a significant patient population managing cholesterol and pain-related conditions. The test result types indicated a large proportion of "Normal" results, alongside notable numbers of "Abnormal" and "Inconclusive" findings, highlighting the importance of diagnostic testing.
+Patient Demographics: The average number of patients per doctor was observed to be 27. Patient count by blood type revealed a relatively even distribution across the major blood groups (A+, A-, B+, B-), with a slightly lower representation of O+ and O-.
+Key Findings and Insights
+Synthesizing the analysis, several key findings and insightful observations emerged:
+Dominance of Chronic Conditions: The significant billing associated with Diabetes, Obesity, Arthritis, and Hypertension underscores the hospital's role in managing chronic diseases within its community. This highlights the need for robust chronic disease management programs and patient education initiatives.
+Balanced Admission Types: The near parity between elective and emergency admissions suggests a comprehensive healthcare service offering, catering to both planned treatments and urgent medical needs. Efficient management of both admission streams is crucial for optimal resource utilization.
+High Utilization of Specific Medications: The prevalence of Lipitor and Ibuprofen prescriptions indicates common health concerns within the patient population, such as hyperlipidemia and pain management. Understanding the reasons behind this high utilization can inform formulary management and potential preventative care strategies.
+Significant Insurance Provider Concentration: The large proportion of billing attributed to Cigna and Medicare suggests the importance of maintaining strong relationships with these providers and understanding their specific requirements and patient populations.
+Relatively Consistent Patient Load per Doctor: An average of 27 patients per doctor provides a benchmark for workload management and staffing considerations. Monitoring this metric over time can help identify potential imbalances.
 
-Charts (Bar, Line, Pie): To visualize billing, test results, and trends over time.
+RECOMMENDATIONS
 
-Preliminary Recommendations
-Reallocate resources toward conditions generating the highest revenue (e.g., Diabetes).
+Based on these findings, the following recommendations are proposed:
+Strengthen Chronic Disease Management Programs: Given the prevalence of conditions like diabetes, obesity, arthritis, and hypertension, St. Patrick's Hospital should invest in and enhance its chronic disease management programs. This could include specialized clinics, patient education workshops, and proactive follow-up care to improve patient outcomes and potentially reduce long-term healthcare costs.
+Optimize Resource Allocation for Admission Types: The balanced distribution of elective and emergency admissions necessitates efficient resource allocation across both departments. Continuous monitoring of admission trends and length of stay by type can inform staffing levels, bed management, and scheduling optimization.
+Further Investigate Medication Utilization Patterns: A deeper analysis into the reasons behind the high utilization of Lipitor and Ibuprofen could be beneficial. This may involve reviewing prescribing guidelines, patient profiles, and potential alternative treatment options.
+Foster Strong Relationships with Key Insurance Providers: Given the significant contribution of Cigna and Medicare to hospital billing, maintaining strong communication and collaborative relationships with these providers is crucial for financial stability and patient access.
+Monitor and Evaluate Doctor Workload: Regularly tracking the average number of patients per doctor can help identify potential workload imbalances and inform staffing decisions to ensure optimal patient care and prevent physician burnout.
 
-Investigate 2023 admission dip for underlying causes.
+ACTIONABLE PLAN TABLE
 
-Standardize test protocols to reduce “Inconclusive” results.
+Action Item	Responsible Party/Department	Timeline	Key Performance Indicators (KPIs)
+Enhance Chronic Disease Management Programs	Medical Affairs, Nursing	6-12 Months	Patient readmission rates for chronic conditions, patient satisfaction
+Optimize Resource Allocation for Admission Types	Operations, Administration	Ongoing	Bed occupancy rates, emergency department wait times, elective surgery scheduling efficiency
+Investigate Medication Utilization Patterns	Pharmacy, Medical Staff	3-6 Months	Number of prescriptions for Lipitor and Ibuprofen, patient outcomes associated with these medications
+Strengthen Relationships with Key Insurance Providers	Finance, Administration	Ongoing	Timeliness of payments, contract renewal success, patient satisfaction with insurance processes
+Monitor and Evaluate Doctor Workload	Administration, HR	Quarterly	Average patients per doctor, physician satisfaction scores
 
-Post-Analysis & Final Insights
-Key Findings
-Total revenue over five years: $1.4 Billion+.
+CONCLUSION
 
-Top 3 conditions by billing: Diabetes, Obesity, and Arthritis.
+This analysis of St. Patrick's Hospital's patient review data from 2019 to 2024 has provided valuable insights into the hospital's operational dynamics, patient profiles, and key areas for potential improvement. By visualizing and interpreting this data, we have moved beyond raw numbers to uncover meaningful narratives that can inform strategic decision-making. 
 
-Average admissions per year: 52.
+The recommendations outlined in this report offer a roadmap for St. Patrick's Hospital to further enhance its services, optimize resource allocation, and ultimately, continue its mission of providing high-quality patient care.
 
-Most used medication: Lipitor.
+LIMITATIONS
 
-Top billing insurer: Cigna ($284M).
+It is important to acknowledge certain limitations in this analysis, a more comprehensive understanding might require access to additional data sources, such as:
+Detailed patient demographics, 
+Treatment protocols
+Patient feedback surveys. 
+Data on hospital-acquired infections or readmission rates.
+Furthermore, the analysis is descriptive in nature and does not establish causal relationships.
+Insufficient granularity on treatment durations per condition.
 
-Comparison with Initial Hypotheses
-While Arthritis is the most common condition, it’s not the highest in billing—suggesting effective early intervention.
+FURTHER RESEARCH
 
-Blood type distribution was more balanced than initially expected, though A- and A+ slightly lead.
-
-Surprising Observations
-Ibuprofen, a relatively inexpensive medication, is among the most used—likely due to high incidence of pain-related conditions.
-
-Elective admissions dominate despite high emergency infrastructure investment.
-
-Data Visualizations & Dashboard Breakdown
-Bar Charts: Used to represent billing by condition and provider, patient count per doctor.
-
-Line Chart: Year-over-year admission trend reveals a stable pattern with a dip in 2023.
-
-Pie Charts: Used for test results and admission type distribution.
-
-Dynamic Dashboard: Filters available for:
-
-Medical conditions
-
-Blood types
-
-Doctor names
-
-Visual Highlights
-The dashboard clearly shows which doctors are managing the most patients.
-
-Insurance contributions are tightly clustered, emphasizing the need for diversified partnerships.
-
-Recommendations and Observations
-Actionable Insights
-Focus resources on top 3 billing conditions to maximize financial efficiency.
-
-Expand capacity for elective procedures, as they dominate admissions.
-
-Standardize medication protocols for common conditions to reduce variability.
-
-Negotiate better rates with Blue Cross and UnitedHealthcare, as their contributions are lower than others.
-
-Operational Suggestions
-Train more staff on high-use medications like Lipitor and Ibuprofen.
-
-Revisit 2023 admission policy or external impacts to avoid future dips.
-
-Enhance data accuracy in test reporting to reduce inconclusive rates.
-
-Conclusion
-The St. Patrick’s Hospital Patient Review (2019–2024) paints a data-rich picture of how a modern healthcare facility operates, adapts, and grows. From the sharp dominance of elective admissions to the consistent reliance on a handful of medications and insurance partners, the data reveals clear patterns that can drive smarter decisions.
-
-Yet, with this clarity comes responsibility—improving test result reliability, managing doctor workload more evenly, and adapting to patient demographics must become strategic priorities. As we close this chapter, the insights gleaned from this analysis serve not just as a retrospective, but as a compass for future care excellence.
+Future research could delve deeper into specific areas identified in this report. For instance, a detailed study on the factors contributing to the high prevalence of the chronic conditions within the hospital's patient population could inform targeted preventative care initiatives. Additionally, analyzing patient outcomes associated with different admission types and medication regimens could provide valuable insights for clinical practice improvements. Integrating patient feedback data with the current analysis could offer a more holistic understanding of the patient experience at St. Patrick's Hospital.
 
 References & Appendices
+
 References
+
 St. Patrick’s Hospital Internal EHR System
 
 Hospital Billing System Reports (2019–2024)
@@ -200,11 +178,12 @@ Insurance Claim Reports (Cigna, Medicare, Blue Cross, etc.)
 Pharmaceutical Usage Logs
 
 Appendices
+
 Appendix A: Pivot Table Formulas
 
 Appendix B: Raw Extracted Dataset Snapshot
 
 Appendix C: Chart Creation Guide in Excel
 
-Appendix D: Admission Policy Memo (2023)![Picture4](https://github.com/user-attachments/assets/d1619570-ff8c-4647-8ce5-a9ddcc3f30e9)
+Appendix D: Admission Policy Memo (2023)
 
